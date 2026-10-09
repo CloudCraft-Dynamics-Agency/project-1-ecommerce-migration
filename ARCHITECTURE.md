@@ -4,24 +4,6 @@
 
 ## 🏗️ System Architecture Overview
 The new architecture transforms the legacy monolith into a fully stateless, containerized, and scalable cloud infrastructure on AWS.
-[ المستخدمون / العملاء ]
-│
-▼
-[ AWS CloudFront (CDN) + Route 53 ]
-│
-▼
-[ AWS WAF & Shield (الأمن) ]
-│
-▼
-[ موزن تحميل التطبيق (ALB) ]
-│
-├──► [ AWS ECS Fargate (الواجهة الأمامية وحاويات الخلفية)]
-│ │
-│ ├──► [ AWS ElastiCache (Redis) ] ── (الجلسة & الكتالوج المخبأ)
-│ │
-│ └──► [ AWS RDS PostgreSQL (Multi-AZ) ] ── (قاعدة بيانات دائمة)
-│
-└──► [ دلو AWS S3 ] ── (تخزين الأصول الثابتة والوسائط)
 ---
 
 ## 🛠️ Technology Stack & AWS Services
